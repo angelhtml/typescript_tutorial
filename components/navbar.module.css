@@ -1,0 +1,73 @@
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0rem;
+    width: 100%;
+    height: 3.7rem;
+    background-color: #000000;
+    background-image: radial-gradient(at 30% -5%, #92f2f2, #d6cff1, rgba(255, 255, 255, 0) 25%), radial-gradient(at 50% 70%, #c4f2e5, rgba(255, 255, 255, 0) 30%), radial-gradient(at 70% 0%, #d6cff1, rgba(255, 255, 255, 0) 20%), linear-gradient(75deg, #92f2f2 5%, rgba(255, 255, 255, 0), #a8d0f0, rgba(255, 255, 255, 0), #eed5f2, rgba(255, 255, 255, 0), #d6cff1, rgba(255, 255, 255, 0), #c4f2e5 90%), radial-gradient(at 30% 50%, #92f2f2, rgba(255, 255, 255, 0) 30%), radial-gradient(at 30% 50%, #9cb9fc, rgba(255, 255, 255, 0) 30%), radial-gradient(at 100% 50%, #92f2f2, #c2dcf2, rgba(255, 255, 255, 0) 50%), linear-gradient(115deg, #92f2f2 5%, #a8d0f0 10%, #d6cff1, #eed5f2 20%, #a8d0f0, #a8d0f0 30%, #d6cff1, #c2dcf2 40%, #92f2f2, #a8d0f0 70%);
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(50px);
+    /*blur effect*/
+    -webkit-backdrop-filter: blur(50px);
+    border: 1.5px solid rgb(255, 255, 255, 0.18);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box1 {
+    flex: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.box2 {
+    flex: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box2 li {
+    font-size: 1.2rem;
+}
+.space_invader {
+    /* Modify size here: */
+    --block-size: 5px;
+    margin-left: 2rem;
+  
+    box-shadow: 0 0 0 var(--block-size) #fff,
+    0 var(--block-size) 0 var(--block-size) #fff,
+    calc(var(--block-size) * -2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #fff,
+    calc(var(--block-size) * 2.5) calc(var(--block-size) * 1.5) 0 calc(var(--block-size) * .5) #fff,
+    calc(var(--block-size) * -3) calc(var(--block-size) * -3) 0 0 #fff,
+    calc(var(--block-size) * 3) calc(var(--block-size) * -3) 0 0 #fff,
+    calc(var(--block-size) * -2) calc(var(--block-size) * -2) 0 0 #fff,
+    calc(var(--block-size) * 2) calc(var(--block-size) * -2) 0 0 #fff,
+    calc(var(--block-size) * -3) calc(var(--block-size) * -1) 0 0 #fff,
+    calc(var(--block-size) * -2) calc(var(--block-size) * -1) 0 0 #fff,
+    calc(var(--block-size) * 2) calc(var(--block-size) * -1) 0 0 #fff,
+    calc(var(--block-size) * 3) calc(var(--block-size) * -1) 0 0 #fff,
+    calc(var(--block-size) * -4) 0 0 0 #fff,
+    calc(var(--block-size) * -3) 0 0 0 #fff,
+    calc(var(--block-size) * 3) 0 0 0 #fff,
+    calc(var(--block-size) * 4) 0 0 0 #fff,
+    calc(var(--block-size) * -5) var(--block-size) 0 0 #fff,
+    calc(var(--block-size) * -4) var(--block-size) 0 0 #fff,
+    calc(var(--block-size) * 4) var(--block-size) 0 0 #fff,
+    calc(var(--block-size) * 5) var(--block-size) 0 0 #fff,
+    calc(var(--block-size) * -5) calc(var(--block-size) * 2) 0 0 #fff,
+    calc(var(--block-size) * 5) calc(var(--block-size) * 2) 0 0 #fff,
+    calc(var(--block-size) * -5) calc(var(--block-size) * 3) 0 0 #fff,
+    calc(var(--block-size) * -3) calc(var(--block-size) * 3) 0 0 #fff,
+    calc(var(--block-size) * 3) calc(var(--block-size) * 3) 0 0 #fff,
+    calc(var(--block-size) * 5) calc(var(--block-size) * 3) 0 0 #fff,
+    calc(var(--block-size) * -2) calc(var(--block-size) * 4) 0 0 #fff,
+    calc(var(--block-size) * -1) calc(var(--block-size) * 4) 0 0 #fff,
+    var(--block-size) calc(var(--block-size) * 4) 0 0 #fff,
+    calc(var(--block-size) * 2) calc(var(--block-size) * 4) 0 0 #fff;
+    background: #fff;
+    width: var(--block-size);
+    height: var(--block-size);
+    overflow: hidden;
+  }

@@ -5,6 +5,7 @@ import Card from "../../components/card";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { content } from "../../types/content";
+import Navbar from "../../components/navbar";
 
 export default function Home() {
   const [data, setData] = useState<content[]>()
@@ -27,6 +28,7 @@ export default function Home() {
 
   return (
     <div>
+      <Navbar onProductTypeChange={(i) => console.log(i)}/>
       <Fatch />
       <input onChange={handleChange} placeholder="enter"/>
       <div style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}>
